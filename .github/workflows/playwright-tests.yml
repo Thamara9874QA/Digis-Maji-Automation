@@ -35,7 +35,7 @@ jobs:
       
     # Run your Playwright tests
     - name: Run Login Tests
-      run: npx playwright test --reporter=html
+      run: npx playwright test tests/New_AJAX_Dashboard_Login_TC.spec.js --reporter=html
       
     # Save HTML test report
     - uses: actions/upload-artifact@v4
